@@ -78,7 +78,6 @@ nav ul {
     margin: 0;
 }
 
-
 /* I cover CSS-only hamburger buttons in my Advanced CSS Layouts course.
 
 Here, because the nav is short, let's try a 4 button layout at the top of the screen.
@@ -121,6 +120,20 @@ nav a:hover {
     color: var(--color5);
 }
 
+/* hero style */
+
+#hero {
+    background-color: var(--color7);
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#hero img {
+    max-width: 100%;
+    max-height: 454px;
+}
 
 /* To keep mobile screens from being stupid long, consider setting a max height on the images and hide the overflow. 
 
