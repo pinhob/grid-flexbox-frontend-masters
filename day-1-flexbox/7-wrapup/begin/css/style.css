@@ -250,6 +250,12 @@ figcaption a {
     display: block;
 }
 
+/* popular prints styles */
+#popular {
+    background-color: var(--color2);
+    color: white;
+    padding: 1rem
+}
 
 /* footer styles */
 
@@ -329,6 +335,20 @@ footer address {
         shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
         max-height: 211px;
     }
+
+    /* popular items */
+    
+    .popular-bg {
+        flex-basis: 100%;
+    }
+
+    .popular-bg figure img {
+        max-width: 100%;
+        object-fit: fill;
+        object-position: 0 -350px;
+    }
+
+
     /* remove the top margin assigned above that provided space between .social and address */
     footer address {
         margin-top: 0;
@@ -362,7 +382,8 @@ footer address {
         margin-left: 100px;
     }
     section li,
-    .social {
+    .social,
+    .popular-bg {
         flex-basis: 32.5%;
     }
     address {
@@ -384,5 +405,9 @@ footer address {
     nav li:nth-child(4),
     nav li:nth-child(5) {
         order: 3;
+    }
+
+    .popular-bg figure img {
+        object-position: 0;
     }
 }
