@@ -309,6 +309,16 @@ footer address {
     font-weight: bold;
 }
 
+/* pop art section styles */
+#popart figure {
+    border: 5px solid var(--color8);
+}
+
+#popart figure img {
+    object-position: 0;
+    object-fit: cover;
+}
+
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
@@ -370,6 +380,34 @@ footer address {
     nav a:hover {
         color: var(--color2);
         background-color: transparent;
+    }
+
+    /* pop art section styles */
+    #popart ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1% 2%;
+    }
+
+    .span2 {
+        grid-column: span 2;
+    }
+
+    .span2-row {
+        grid-row: span 2;
+    }
+
+    .span2-row figure {
+        max-height: unset;
+    }
+    
+
+    .span3 {
+        grid-column: span 3;
+    }
+
+    figure {
+        height: 100%;
     }
 }
 
